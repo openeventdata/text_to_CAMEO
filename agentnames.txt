@@ -1,0 +1,614 @@
+Government	GOV	GOV
+Executive	GOV	GOV1
+Executive Office	GOV	GOV2
+Cabinet	GOV	GOV3
+Agriculture / Fishing / Forestry Ministry	GOVAGR	GOVAGR
+Finance / Economy / Commerce / Trade Ministry	GOVBUS	GOVBUS
+Defense / Security Ministry	GOVMIL	GOVMIL
+Education Ministry	GOVEDU	GOVEDU
+Energy Ministry	GOVENV	GOV4
+Environment Ministry	GOVENV	GOVENV
+Transportation Ministry	GOVENV	GOVENV5
+Food Ministry	GOVENV	GOVENV6
+Disaster Ministry	GOVENV	GOVENV7
+Foreign Ministry	GOV	GOVENV8
+Health Ministry	GOVHLH	GOVHLH
+Interior / Home Ministry	GOV	GOV9
+Industrial / Textiles / Mining Ministry	GOVBUS	GOVHLH10
+Science / Tech / Knowledge / Innovation Ministry	GOVHLH	GOVHLH11
+NGO Ministry	GOV	GOVHLH12
+Labor Ministry	GOVLAB	GOVLAB
+Post / Tecoms Ministry	GOVBUS	GOVLAB13
+Science / Tech Ministry	GOVBUS	GOVLAB14
+Water Ministry	GOVLAB	GOVLAB15
+Women / Children / Social / Welfare / Development / Religion Ministry	GOVDEV	GOVDEV
+Justice / Law Ministry	GOVJUD	GOVJUD
+Tourism Ministry	GOVJUD	GOVJUD16
+Drugs Ministry	GOVJUD	GOVJUD17
+Human Rights Ministry	GOVHRI	GOVHRI
+Elections Ministry	GOVHRI	GOVHRI18
+Housing / Construction Ministry	GOVHRI	GOVHRI19
+Intelligence Ministry	SPY	SPY
+Information / Communication / Transparency Ministry	GOVMED	GOVMED
+State Media	GOVMED	GOVMED1
+Management / Budget / Planning / Organization Ministry	GOV	GOV2
+State Owned Enterprises	GOVBUS	GOVBUS20
+State-Owned Agricultural	GOVBUS	GOVBUS21
+State-Owned Transportation	GOVBUS	GOVBUS22
+State-Owned Utilities	GOVBUS	GOVBUS23
+State-Owned Heavy Industrial / Chemical	GOVBUS	GOVBUS24
+State-Owned Defense / Security	GOVBUS	GOVBUS25
+State-Owned Durable Goods	GOVBUS	GOVBUS26
+State-Owned Consumer Goods	GOVBUS	GOVBUS27
+State-Owned Consumer Services	GOVBUS	GOVBUS28
+State-Owned Consulting / Financial Services	GOVBUS	GOVBUS29
+State-Owned Science / Tech / Knowledge / Innovation	GOVBUS	GOVBUS30
+State-Owned Medical / Health / Pharmeceutical	GOVBUS	GOVBUS31
+Police	COP	COP
+National / Border Divisions	COP	COP32
+Provincial Divisions	COP	COP33
+Municipal Divisions	COP	COP34
+Military	MIL	MIL
+Military Intelligence	MILSPY	MILSPY
+Military Intelligence Headquarters	MILSPY	MILSPY35
+Military Intelligence Special Forces	MILSPY	MILSPY36
+Military Intelligence Infantry / Regular	MILSPY	MILSPY37
+Military Intelligence Mechanized (Ships, Tanks, Planes)	MILSPY	MILSPY38
+Military Intelligence Education / Training	MILSPY	MILSPY39
+Military Intelligence Support	MILSPY	MILSPY40
+Military Intelligence Medical	MILSPY	MILSPY41
+Research And Design Wings	MIL	MIL42
+Research And Design Wings Headquarters	MIL	MIL43
+Research And Design Wings Education / Training	MIL	MIL44
+Research And Design Wings Support	MIL	MIL45
+Research And Design Wings Medical	MIL	MIL46
+Army	MIL	MIL47
+Army Headquarters	MIL	MIL48
+Army Special Forces	MIL	MIL49
+Army Infantry / Regular	MIL	MIL50
+Army Mechanized (Ships, Tanks, Planes)	MIL	MIL51
+Army Education / Training	MIL	MIL52
+Army Support	MIL	MIL53
+Army Medical	MIL	MIL54
+Navy	MIL	MIL55
+Navy Headquarters	MIL	MIL56
+Navy Special Forces	MIL	MIL57
+Navy Infantry / Regular	MIL	MIL58
+Navy Mechanized (Ships, Tanks, Planes)	MIL	MIL59
+Navy Education / Training	MIL	MIL60
+Navy Support	MIL	MIL61
+Navy Medical	MIL	MIL62
+Air Force	MIL	MIL63
+Air Force Headquarters	MIL	MIL64
+Air Force Special Forces	MIL	MIL65
+Air Force Infantry / Regular	MIL	MIL66
+Air Force Mechanized (Ships, Tanks, Planes)	MIL	MIL67
+Air Force Education / Training	MIL	MIL68
+Air Force Support	MIL	MIL69
+Air Force Medical	MIL	MIL70
+Marines	MIL	MIL71
+Marines Headquarters	MIL	MIL72
+Marines Special Forces	MIL	MIL73
+Marines Infantry / Regular	MIL	MIL74
+Marines Mechanized (Ships, Tanks, Planes)	MIL	MIL75
+Marines Education / Training	MIL	MIL76
+Marines Support	MIL	MIL77
+Marines Medical	MIL	MIL78
+Coast Guard	MIL	MIL79
+Coast Guard Headquarters	MIL	MIL80
+Coast Guard Special Forces	MIL	MIL81
+Coast Guard Infantry / Regular	MIL	MIL82
+Coast Guard Mechanized (Ships, Tanks, Planes)	MIL	MIL83
+Coast Guard Education / Training	MIL	MIL84
+Coast Guard Support	MIL	MIL85
+Coast Guard Medical	MIL	MIL86
+Legislative / Parliamentary	LEG	LEG
+Upper House	LEG	LEG87
+Lower House	LEG	LEG88
+Unicameral	LEG	LEG89
+Judicial	JUD	JUD
+National / Supreme Court	JUD	JUD90
+Provincial Court	JUD	JUD91
+Municipal / District Court	JUD	JUD92
+Civil Court	JUD	JUD93
+Religious Court	JUD	JUD94
+Military / Tribunal	JUD	JUD95
+Local	JUD	JUD96
+Provincial	JUD	JUD97
+Municipal	JUD	JUD98
+Government Religious	GOVREL	GOVREL
+Parties	PTY	PTY
+(National) Major Party	PTY	PTY99
+Opposition Major Party (Out Of Government)	OPPPTY	OPPPTY
+Government Major Party (In Government)	GOVPTY	GOVPTY
+(National) Minor Party	PTY	PTY100
+Opposition Minor Party (Out Of Government)	OPPPTY	OPPPTY101
+Government Minor Party (In Government)	GOVPTY	GOVPTY102
+Provincial Party	PTY	PTY103
+Opposition Provincial Party (Out Of Government)	OPPPTY	OPPPTY104
+Government Provincial Party (In Government)	GOVPTY	GOVPTY105
+Municipal Party	PTY	PTY106
+Opposition Municipal Party (Out Of Government)	OPPPTY	OPPPTY107
+Government Municipal Party (In Government)	GOVPTY	GOVPTY108
+Dissident	OPP	OPP109
+Criminals / Gangs	CRM	CRM
+Protestors / Popular Opposition / Mobs	OPP	OPP
+Exiles	OPP	OPP110
+Banned Parties	OPPPTY	OPP111
+Radicals / Extremists / Fundamentalists	REB	RAD
+Organized Violent	REB	RAD112
+Rebel	REB	REB
+Insurgents	REB	INS
+Separatists	REB	SEP
+Social	CVL	CIV113
+Agricultural	BUS	BUSAGR
+Business	BUS	BUS
+Agricultural Business	BUS	BUS122
+Transportation Business	BUS	BUS123
+Utilities Business	BUS	BUS124
+Heavy Industrial / Chemical Business	BUS	BUS125
+Defense / Security Business	BUS	BUS126
+Durable Goods Business	BUS	BUS127
+Consumer Goods Business	BUS	BUS128
+Consumer Services Business	BUS	BUS129
+Consulting / Financial Services Business	BUS	BUS130
+Science / Tech / Knowledge / Innovation Business	BUS	BUS131
+Medical / Health / Pharmeceutical Business	BUS	BUS132
+Education	EDU	EDU
+Student	EDU	EDU115
+National Ethnic	CVL	CVL116
+National Ethnic Majority	CVL	CVL117
+National Ethnic Minority	CVL	CVL118
+General Population / Civilian / Social	CVL	CVL
+Labor	LAB	LAB
+Legal	JUD	JUD114
+Media	MED	MED
+News	MED	MED133
+Print News	MED	MED134
+Radio News	MED	MED135
+Television News	MED	MED136
+Online News	MED	MED137
+Entertainment	MED	MED138
+Print Entertainment	MED	MED139
+Radio Entertainment	MED	MED140
+Television Entertainment	MED	MED141
+Online Entertainment	MED	MED142
+Medical / Health	MED	MED99e
+Refugees / Displaced	REF	REF
+National Religious	REF	REF119
+Religious Majority	REF	REF120
+Religious Minority	REF	REF121
+Nongovernmental Organizations / Activists	IGO	IGO143
+Agricultural NGOs	IGOAGR	IGO148
+Business NGOs	IGOBUS	IGO144
+Education NGOs	IGOEDU	IGO146
+Energy NGOs	IGO	IGO147
+Environment NGOs	IGOENV	IGOENV
+Ethnic NGOs	IGOEDU	IGO
+Development NGOs	IGODEV	IGODEV
+Human Rights NGOs	IGOHRI	IGOHRI
+Information / Communication / Transparency NGOs	IGO	IGO150
+Labor NGOs	IGOLAB	IGO154
+Legal NGOs	IGOHRI	IGOHRI185
+Media NGOs	IGO	IGO438
+Medical / Health NGOs	IGOHLH	IGOHLH
+Refugees / Displaced NGOs	IGOREF	IGO145
+Charity NGOs	IGOHLH	IGOHLH149
+Elite	CVL	ELI
+Unidentified Forces	UAF	UAF
+Unaffiliated Sectors	iSec	iSec
+International Religious	REL	REL
+Atheist	ATH	ATH
+Animist	PAG	PAG
+Shamanist	SHA	SHA
+Muslim	MOS	MOS
+Alewi	MOSALE	MOSALE
+Sunni	MOSSUN	MOSSUN
+Shia	MOSSHI	MOSSHI
+Sufi	MOSSFI	MOSSFI
+Druze	MOSDRZ	MOSDRZ
+Hindu	HIN	HIN
+Christian	CHR	CHR
+Catholic	CHRCTH	CHRCTH
+Protestant	CHRPRO	CHRPRO
+Coptic	CHRCPT	CHRCPT
+Jehovah's Witness	CHRJHW	CHRJHW
+Maronite	CHRMRN	CHRMRN
+Orthodox	CHRDOX	CHRDOX
+Buddhist	BUD	BUD
+Jewish	JEW	JEW
+Daoist	TAO	REL152
+Shinto	REL	REL153
+Sikh	SIK	SIK
+Ahmadiyya	SIK	SIK154
+Jain	JAN	JAN
+Mormon	LDS	LDS
+Baha'I	BAH	BAH
+Zoroastrian / Mazdi	ZRO	ZRO
+Confucian	CON	CON
+International Ethnic	REL	REL155
+Chechen	CNY	CNY
+Kashmiri	KAS	KAS
+Acehnese	KAS	KAS156
+Han	KAS	KAS157
+Tamil	TAM	TAM
+Sinhalese	SNL	SNL
+Bodo	SNL	SNL158
+Shan	SNL	SNL159
+Mizo	SNL	SNL160
+Chakma	CKM	CKM
+Kuki	CKM	CKM161
+Tripuri	CKM	CKM162
+Moro	CKM	CKM163
+Uyghur	UIG	UIG
+Hmong	UIG	UIG164
+Karen	UIG	UIG165
+Assamese	UIG	UIG167
+Tibetan	TIB	TIB
+Albanian (Ethnic Group)	ABN	ABN
+Arab	ARB	ARB
+Arab, Arabian	ARB	ARB16691
+Arab, Hassaniya	ARB	ARB16692
+Arab, Levant	ARB	ARB16693
+Arab, Libyan	ARB	ARB16694
+Arab, Maghreb	ARB	ARB16695
+Arab, Shuwa	ARB	ARB16696
+Arab, Sudan	ARB	ARB16697
+Arab, Yemeni	ARB	ARB16698
+Bedouin	BED	BED
+Bedouin, Arabian	BED	BED16716
+Bedouin, Saharan	BED	BED16717
+Croat (Ethnic Group)	CRO	CRO
+Gypsy	GYP	GYP
+Hausa	HAU	HAU
+Hutu	HUT	HUT
+Ibo	IBO	IBO
+Ljaw	IJW	IJW
+Krahn	KRH	KRH
+Kurd (Ethnic Group)	KUR	KUR
+Mandingoe	MAN	MAN
+Ogoni	OGO	OGO
+Palestinian	PAL	PAL
+Serb (Ethnic Group)	SER	SER
+Slav	SLA	SLA
+Slav, Eastern	SLA	SLA16862
+Slav, Southern	SLA	SLA16863
+Slav, Western	SLA	SLA16864
+Tuareg	TRG	TRG
+Turk (Ethnic Group)	TRK	TRK
+Tutsi	TUT	TUT
+Yoruba	YRB	YRB
+Josua Project Ethnic Groups	ETN	ETN
+Aborigine	ETN	ETN16680
+Aceh of Sumatra	ETN	ETN16681
+Adamawa-Ubangi	ETN	ETN16682
+Adi	ETN	ETN16683
+Afar	ETN	ETN16684
+Aimaq	ETN	ETN16685
+Albanian	ETN	ETN16686
+Altaic	ETN	ETN16687
+Amazon	ETN	ETN16688
+Anglo-American	ETN	ETN16689
+Anglo-Celt	ETN	ETN16690
+Armenian	ETN	ETN16699
+Assyrian / Aramaic	ETN	ETN16700
+Atlantic	ETN	ETN16701
+Atlantic-Jola	ETN	ETN16702
+Atlantic-Wolof	ETN	ETN16703
+Aymara	ETN	ETN16704
+Azerbaijani	ETN	ETN16705
+Aztec	ETN	ETN16706
+Bali-Sasak	ETN	ETN16707
+Baloch	ETN	ETN16708
+Baltic	ETN	ETN16709
+Banjar of Kalimantan	ETN	ETN16710
+Bantu	ETN	ETN16711
+Bantu, Makua-Yao	ETN	ETN16712
+Bantu, Cameroon-Bamileke	ETN	ETN16908
+Bantu, Central-Congo	ETN	ETN16909
+Bantu, Central-East	ETN	ETN16910
+Bantu, Central-Lakes	ETN	ETN16911
+Bantu, Central-Luba	ETN	ETN16912
+Bantu, Central-South	ETN	ETN16913
+Bantu, Central-Southeast	ETN	ETN16914
+Bantu, Central-Southwest	ETN	ETN16915
+Bantu, Central-Tanzania	ETN	ETN16916
+Bantu, Chewa-Sena	ETN	ETN16917
+Bantu, East-Coastal	ETN	ETN16918
+Bantu, Gikuyu-Kamba	ETN	ETN16919
+Bantu, Kongo	ETN	ETN16920
+Bantu, Nguni	ETN	ETN16921
+Bantu, Northwest	ETN	ETN16922
+Bantu, Shona	ETN	ETN16923
+Bantu, Sotho-Tswana	ETN	ETN16924
+Bantu, Southeastern	ETN	ETN16925
+Bantu, Swahili	ETN	ETN16926
+Makua-Yao	ETN	ETN16712
+Cameroon-Bamileke	ETN	ETN16908
+Central-Congo	ETN	ETN16909
+Central-East	ETN	ETN16910
+Central-Lakes	ETN	ETN16911
+Central-Luba	ETN	ETN16912
+Central-South	ETN	ETN16913
+Central-Southeast	ETN	ETN16914
+Central-Southwest	ETN	ETN16915
+Central-Tanzania	ETN	ETN16916
+Chewa-Sena	ETN	ETN16917
+East-Coastal	ETN	ETN16918
+Gikuyu-Kamba	ETN	ETN16919
+Kongo	ETN	ETN16920
+Nguni	ETN	ETN16921
+Northwest	ETN	ETN16922
+Shona	ETN	ETN16923
+Sotho-Tswana	ETN	ETN16924
+Southeastern	ETN	ETN16925
+Swahili	ETN	ETN16926
+Barito of Kalimantan	ETN	ETN16713
+Basque	ETN	ETN16714
+Batak-Nias of Sumatra	ETN	ETN16715
+Beja	ETN	ETN16718
+Bengali	ETN	ETN16719
+Benue	ETN	ETN16720
+Berber-Saharan	ETN	ETN16721
+Berber-Kabyle	ETN	ETN16722
+Berber-Riff	ETN	ETN16723
+Berber-Shawiya	ETN	ETN16724
+Berber-Shilha	ETN	ETN16725
+Bhil	ETN	ETN16726
+Bhojpur-Maithili	ETN	ETN16727
+Bhutanese	ETN	ETN16728
+Bihari	ETN	ETN16729
+Bouyei	ETN	ETN16730
+Brahui	ETN	ETN16731
+Bugi-Makassar of Sulawesi	ETN	ETN16732
+Bungku-Bajau	ETN	ETN16733
+Burmese	ETN	ETN16734
+Borneo-Kalimantan	ETN	ETN16735
+Afro-Caribbean	ETN	ETN16736
+Afro-Caribbean, Anglophone	ETN	ETN16737
+Afro-Caribbean, Dutch	ETN	ETN16906
+Afro-Caribbean, Francophone	ETN	ETN16907
+Anglophone	ETN	ETN16737
+Dutch	ETN	ETN16906
+Francophone	ETN	ETN16907
+Caucasus	ETN	ETN16738
+Chadic	ETN	ETN16739
+Kanuri-Saharan	ETN	ETN16740
+Cham	ETN	ETN16741
+Chinese	ETN	ETN16742
+Chinese-Hui	ETN	ETN16743
+Egyptian	ETN	ETN16744
+Ethiopian	ETN	ETN16745
+Fiji	ETN	ETN16746
+Filipino	ETN	ETN16747
+Filipino, Central	ETN	ETN16748
+Filipino, Muslim	ETN	ETN16749
+Filipino, Tribal	ETN	ETN16750
+Finno-Ugric	ETN	ETN16751
+Finno-Ugric, Saami	ETN	ETN16752
+Flores-Sumba-Alor	ETN	ETN16753
+French	ETN	ETN16754
+Fulani / Fulbe	ETN	ETN16755
+Garo-Tripuri	ETN	ETN16756
+Germanic	ETN	ETN16757
+Gond	ETN	ETN16758
+Gorontalo of Sulawesi	ETN	ETN16759
+Greek	ETN	ETN16760
+Guarani	ETN	ETN16761
+Guera-Naba of Chad	ETN	ETN16762
+Guinean	ETN	ETN16763
+Gujarati	ETN	ETN16764
+Gur	ETN	ETN16765
+Hani	ETN	ETN16766
+Hindi	ETN	ETN16767
+Hispanic	ETN	ETN16768
+Hungarian	ETN	ETN16769
+Igbo	ETN	ETN16770
+Ijaw	ETN	ETN16771
+Inuit	ETN	ETN16772
+Italian	ETN	ETN16773
+Japanese	ETN	ETN16774
+Jat	ETN	ETN16775
+Jawa	ETN	ETN16776
+Jews	ETN	ETN16777
+Kaili-Tomini of Sulawesi	ETN	ETN16778
+Kannada	ETN	ETN16779
+Kazakh	ETN	ETN16780
+Khoisan	ETN	ETN16781
+Kyrgyz	ETN	ETN16782
+Korean	ETN	ETN16783
+Kru	ETN	ETN16784
+Kuki-Chin-Naga	ETN	ETN16785
+Lampung of Sumatra	ETN	ETN16787
+Lao	ETN	ETN16788
+Li	ETN	ETN16789
+Lisu	ETN	ETN16790
+Madura of Java	ETN	ETN16791
+Malagasy	ETN	ETN16792
+Malay	ETN	ETN16793
+Malayali	ETN	ETN16794
+Maldivian	ETN	ETN16795
+Malinke	ETN	ETN16796
+Malinke-Bambara	ETN	ETN16797
+Malinke-Jula	ETN	ETN16798
+Maltese	ETN	ETN16799
+Maluku	ETN	ETN16800
+Maluku, Central	ETN	ETN16801
+Maluku, Northern	ETN	ETN16802
+Maluku, Southern	ETN	ETN16803
+Manchu	ETN	ETN16804
+Mande	ETN	ETN16805
+Marathi-Konkani	ETN	ETN16806
+Maya	ETN	ETN16807
+Melayu of Sumatra	ETN	ETN16808
+Miao / Hmong	ETN	ETN16809
+Micronesian	ETN	ETN16810
+Minahasa-Sangir of Sulawesi	ETN	ETN16811
+Minangkabau-Rejang of Sumatra	ETN	ETN16812
+Miri-Kachin	ETN	ETN16813
+Mixe	ETN	ETN16814
+Mixteco	ETN	ETN16815
+Mizo-Lushai	ETN	ETN16816
+Mongolian	ETN	ETN16817
+Mon-Khmer	ETN	ETN16818
+Munda-Santal	ETN	ETN16819
+Musi of Sumatra	ETN	ETN16820
+Nepali-Pahari	ETN	ETN16821
+New Caledonia	ETN	ETN16822
+New Guinea	ETN	ETN16823
+Nilotic	ETN	ETN16824
+North American Indigenous	ETN	ETN16825
+Nosu	ETN	ETN16826
+Nuba Mountains	ETN	ETN16827
+Nubian	ETN	ETN16828
+Nupe	ETN	ETN16829
+Nuristan	ETN	ETN16830
+Ogan of Sumatra	ETN	ETN16831
+Omotic	ETN	ETN16832
+Oraon	ETN	ETN16833
+Oriya	ETN	ETN16834
+Oromo	ETN	ETN16835
+Other Central American Indigenous	ETN	ETN16836
+Other Hispanic American	ETN	ETN16837
+Other Pacific Islanders	ETN	ETN16838
+Other Southeast Asian	ETN	ETN16839
+Other South Asian	ETN	ETN16840
+Other Sub-Saharan African	ETN	ETN16841
+Otomi	ETN	ETN16842
+Ouaddai-Fur	ETN	ETN16843
+Parsee	ETN	ETN16844
+Pasemah of Sumatra	ETN	ETN16845
+Pashtun	ETN	ETN16846
+Persian	ETN	ETN16847
+Polynesian	ETN	ETN16848
+Portuguese	ETN	ETN16849
+Portuguese, Brazilian	ETN	ETN16850
+Portuguese, European	ETN	ETN16851
+Punjabi	ETN	ETN16852
+Pygmy	ETN	ETN16853
+Quechua	ETN	ETN16854
+Rajasthan	ETN	ETN16855
+Romanian	ETN	ETN16856
+South Himalaya	ETN	ETN16857
+Sara-Bagirmi	ETN	ETN16858
+Scandinavian	ETN	ETN16859
+Sindhi	ETN	ETN16860
+Sinhala	ETN	ETN16861
+Solomons	ETN	ETN16865
+Somali	ETN	ETN16866
+Songhai	ETN	ETN16867
+Soninke	ETN	ETN16868
+South American Indigenous	ETN	ETN16869
+Spanish	ETN	ETN16870
+Sudanic	ETN	ETN16871
+Sunda-Betawi of Java	ETN	ETN16872
+Susu	ETN	ETN16873
+Tai	ETN	ETN16874
+Tai Dam	ETN	ETN16875
+Tai-Kadai	ETN	ETN16876
+Taiwan Indigenous	ETN	ETN16877
+Tajik	ETN	ETN16878
+Talysh	ETN	ETN16879
+Telugu	ETN	ETN16880
+Thai	ETN	ETN16881
+Timor	ETN	ETN16882
+Toraja of Sulawesi	ETN	ETN16883
+Tukangbesi of Sulawesi	ETN	ETN16884
+Turkish	ETN	ETN16885
+Turkmen	ETN	ETN16886
+Ural-Siberian	ETN	ETN16887
+Urdu Muslim	ETN	ETN16888
+Uzbek	ETN	ETN16889
+Vanuatu	ETN	ETN16890
+Vietnamese	ETN	ETN16891
+West China / Lolo	ETN	ETN16892
+West Malaysia Indigenous	ETN	ETN16893
+Yao-Mien	ETN	ETN16894
+Zapoteco	ETN	ETN16895
+Zhuang	ETN	ETN16896
+Undefined	ETN	ETN16897
+Arab World	ETN	ETN16898
+Caucasian Peoples	ETN	ETN16899
+Sub-Saharan African	ETN	ETN16900
+Luri-Bakhtiari	ETN	ETN16901
+Deaf	ETN	ETN16902
+Afro-American	ETN	ETN16903
+Afro-American, Hispanic	ETN	ETN16904
+Afro-American, Northern	ETN	ETN16905
+Banda	ETN	ETN533
+Ideological	---	OPP
+Nationalist	---	OPP173
+Fundamentalist	--	OPP174
+Secular	---	OPP175
+Tribalist	---	OPP176
+Communist	---	OPP177
+Center Left	---	OPP178
+Center Right	---	OPP179
+Far Left	---	OPP180
+Far Right	---	OPP181
+Centrist	---	OPP182
+Libertarian	---	OPP183
+Anarchist	---	OPP184
+Nongovernmental Organization (International)	IGO	IGO
+Medical / Health IGOs	IGOHLH	IGOHLH
+Business IGOs	IGOBUS	IGOBUS
+Refugees IGOs	IGOREF	IGOREF
+Education IGOs	IGOEDU	IGOEDU
+Development IGOs	IGODEV	IGODEV
+Energy IGOs	IGOBUS	IGOBUS
+Agricultural IGOs	IGOAGR	IGOAGR
+Human Rights IGOs	IGOHRI	IGOHRI
+Charity IGOs	IGO	IGO
+Information / Communication / Transparency IGOs	IGO	IGO
+Environment IGOs	IGO	IGO196
+Legal IGOs	IGO	IGO9f7
+International Government Organization	IGO	IGO
+Global	IGO	IGO
+Global Information / Communication / Transparency IGOs	IGOMED	IGOMED
+Global Energy IGOs	IGOBUS	IGOBUS
+Global Diplomatic IGOs	IGO	IGO
+Global Defense / Security IGOs	IGOMIL	IGOMIL
+Global Law / Justice / Judicial IGOs	IGOJUD	IGOJUD
+Global Environment IGOs	IGOENV	IGOENV
+Global Economic/Financial/Trade IGOs	IGOBUS	IGOBUS
+Global Development IGOs	IGODEV	IGODEV
+Global Health IGOs	IGOHLH	IGOHLH
+Global Human Rights IGOs	IGOHRI	IGOHRI
+Global Agricultural IGOs	IGOAGR	IGOAGR
+Global Refugees IGOs	IGOREF	IGOREF
+Regional	IGO	IGO
+Regional Information / Communication / Transparency IGOs	IGOMED	IGOMED
+Regional Energy IGOs	IGOBUS	IGOBUS
+Regional Diplomatic IGOs	IGO	IGO
+Regional Defense / Security IGOs	IGOMIL	IGOMIL
+Regional Law / Justice / Judicial IGOs	IGOJUD	IGOJUD
+Regional Environment IGOs	IGOENV	IGOENV
+Regional Economic/Financial/Trade IGOs	IGOBUS	IGOBUS
+Regional Development IGOs	IGODEV	IGODEV
+Regional Health IGOs	IGOHLH	IGOHLH
+Regional Human Rights IGOs	IGOHRI	IGOHRI
+Regional Agricultural IGOs	IGOAGR	IGOAGR
+Regional Refugees IGOs	IGOREF	IGOREF
+International Dissident	INT	INT
+International Criminals / Gangs	INT	INT205
+International Protestors / Popular Opposition / Mobs	INT	INT206
+International Banned Parties	INT	INT207
+International Exiles	INT	INT208
+International Radicals / Extremists / Fundamentalists	IMG	IMG
+International Terrorists	IMG	IMG210
+International Rebels	IMG	IMG211
+International Insurgents	IMG	IMG212
+International Separatists	IMG	IMG213
+Multinational Corporation	MNC	MNC
+Agricultural MNCs	MNC	MNC215
+Transportation MNCs	MNC	MNC216
+Utilities MNCs	MNC	MNC217
+Heavy Industrial / Chemical MNCs	MNC	MNC218
+Defense / Security MNCs	MNC	MNC219
+Durable Goods MNCs	MNC	MNC220
+Consumer Goods MNCs	MNC	MNC221
+Consumer Services MNCs	MNC	MNC222
+Consulting / Financial Services MNCs	MNC	MNC223
+Science / Tech / Knowledge / Innovation MNCs	MNC	MNC224
+Medical / Health / Pharmeceutical MNCs	MNC	MNC225
+NULL	——— 
