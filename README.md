@@ -14,6 +14,3 @@ Requires:
 
 	countrynames.txt
 	agentnames.txt
-
-
-# text_to_CAMEO
