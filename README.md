@@ -22,7 +22,6 @@ Requires:
     CAMEO_codefile.txt [FOUO only]
     countrynames.txt
     agentnames.txt
-    filenames.txt
 
 Comments on the April-2017 modifications
 ----------------------------------------
