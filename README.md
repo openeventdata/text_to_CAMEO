@@ -24,3 +24,11 @@ Requires:
     agentnames.txt
     filenames.txt
 
+Comments on the April-2017 modifications
+----------------------------------------
+
+1. This program merges two earlier versions I'd used separately for the two formats. Both of those were used successfully in large-scale projects so I'm confident they were working, but I've not done that sort of testing on this merged version (I have done *basic* testing on it...really...). So definitely check and make sure the output makes sense.
+
+2. The fact that there are at least two incompatible formats of the ICEWS data suggests the possibility that there might be others: again, check to make sure your output makes sense.
+
+3. There's an assortment of “commented out” code in the program that was used earlier to do some basic marginals on the code: this could be reactivate but is in Python 2.6 and will also need a bit of updating to Python 3.5.
