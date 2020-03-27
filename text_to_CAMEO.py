@@ -68,6 +68,7 @@ REVISION HISTORY:
 18-June-14: Initial version
 30-March-15: Modified to work with DataVerse filenames
 28-April-17: Align assignment of quad codes with polarity of Goldstein scores; added command-line options; merged FOUO and Dataverse versions
+26-Mar-2020: Code both .tab and .tsv files in default mode to accommodate 2018 change in formatting: see GitHub README.md
 
 ----------------------------------------------------------------------------------
 """
@@ -217,12 +218,12 @@ else:
     directory = os.getcwd()
     filelist = []
     if DO_FOUO:
-        suffix = ".csv"
+        suffix = [".csv"]
     else:
-        suffix = ".tab"    
+        suffix = [".tab", ".tsv"]    
     for path, subdirs, files in os.walk(directory): # get list of ICEWS files based on extension
         for name in files:
-            if name.endswith(suffix):
+            if name[-4:] in suffix:
                 filelist.append(os.path.join(path,name)) 
 
 try: 
