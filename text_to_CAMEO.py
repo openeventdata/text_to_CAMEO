@@ -6,13 +6,14 @@ format using the CAMEO codes. The conversion process is described in detail in t
 
 Repository for code: https://github.com/openeventdata/text_to_CAMEO
 
-To run: python text_to_CAMEO.py [[-F] [-c] [-t <filename>]
+To run: python text_to_CAMEO.py [[-F] [-c] [-t <filename>] [-m]
 
 Options:
 -F: Process the FOUO format. Default: Process the Dataverse format
 -c: Include COW numerical country codes in addition to ISO-3166 code. Default: Include only the ISO codes
 -t: <file-name > Process the files listed one per line in the text file <file-name>. 
-    Default: process all of the files in the working directory that end in “.csv” (Dataverse format) or “.tab” (FOUO format)
+    Default: process all of the files in the working directory that end in “.csv” (FOUO format) or “.tab”/".tsv" (Dataverse format)
+-m: Output all of the substate agents in a concatenated string.
 
 Requires:
     CAMEO_codefile.txt [FOUO format]
@@ -37,11 +38,11 @@ This program has been successfully run under Mac OS 10.10; it is standard Python
 
 PROVENANCE:
 Programmer: Philip A. Schrodt
-            Parus Analytics
+            Parus Analytics LLC
             Charlottesville, VA 22901 U.S.A.
             http://eventdata.parusanalytics.com
 
-Copyright (c) 2017  Philip A. Schrodt.  All rights reserved.
+Copyright (c) 2021  Philip A. Schrodt.  All rights reserved.
 
 The MIT License (MIT)
 
@@ -100,7 +101,7 @@ Missing_sectors = {}
 
 
 # ordered list of CAMEO agent codes to extract for the agent field: see documentation
-agentcodes = ['GOV','MIL','REB','OPP', 'PTY', 'COP','JUD','SPY','IGO','MED','EDU','BUS','CRM','CVL','---']
+agentcodes = ['MIL','GOV','REB','OPP', 'PTY', 'COP','JUD','SPY','IGO','MED','EDU','BUS','CRM','CVL','---']
 
 # ============ function definitions ================ #
 
@@ -141,11 +142,23 @@ def get_sector_code(phrase):
         return '' 
         
 def reduce_sectors():
-#   print agentlist
-    for code in agentcodes:
-        if code in agentlist:
-            return code
-    return 'OTH'
+#    print("RS:",agentlist)
+    if ALLAGENTS:
+        if agentlist:
+            agtset = set(agentlist)
+            agtset.discard("---")
+            agtlst = list(agtset)
+            return "-".join(agtlst)
+        else:
+            return "OTH"
+    else:
+        for code in agentcodes:
+            if code in agentlist:
+                return code
+        if agentlist:
+            return agentlist[0]
+        else:
+            return 'OTH'
 
 """def print_sorted_dict(thedict):
     print("\n", end='')
@@ -163,11 +176,8 @@ if "-F" in sys.argv:
     DO_FOUO = True
     datefield = 1
     evtfield = 5
-    srcfield = 4
-    tarfield = 9
     srcagtfield = 3
-    taragtfield = 8
-    goldscorefield = 6
+    srcfield = 4  # remaining fields set after we see whether a file has CAMEO codes
 
     CAMEO_eventcodes = {}   # conversion dictionaries
     Missing_eventcodes = {} # debugging dictionaries used to check for phrases not in the files
@@ -197,6 +207,7 @@ else:
     srcagtfield = 3
     taragtfield = 9
     goldscorefield = 7
+    cameofield = -1
 
 if "-c" in sys.argv:
     DO_COW  = True
@@ -204,6 +215,8 @@ if "-c" in sys.argv:
 else:
     DO_COW  = False
     NULLCASE = "---"
+    
+ALLAGENTS = "-m" in sys.argv
 
 
 if "-t" in sys.argv:
@@ -260,21 +273,35 @@ while len(line) > 0:
     
 fin.close()
 
+#fscr = open("MIL_cases.csv", "w")
+
 for filename in filelist:
     try: 
         fin = open(filename,'r')
-        filename = filename.rsplit('/') # get filename from filepath 
-        filename = filename[-1]
         print('Reading',filename)
+        if DO_FOUO:  # figure out the format in this filelist
+            line = fin.readline()  # get header
+            field = line.split('\t')
+            if field[6] == "Intensity":
+                tarfield = 9
+                taragtfield = 8
+                goldscorefield = 6
+                cameofield = -1
+            else:
+                cameofield = 6
+                goldscorefield = 7
+                taragtfield = 9
+                tarfield = 10
+            
     except IOError:
         print("\aError: Could not find the input file", infile)
         sys.exit()  
-    fout = open(outfile_prefix+filename[:-3]+'txt','w')
+    fout = open(outfile_prefix+os.path.basename(filename)[:-3]+'txt','w')
 
-    line = fin.readline()  # skip header
     line = fin.readline()
     caseno = 1
     while len(line) > 0:
+#        if "ilitary" in line: fscr.write(line)
         line = line.replace('\t\t','\tNULL\t') # replace missing field with 'NULL' 
         line = line.replace('\t\t','\tNULL\t') # in case there are two missing fields in a row
         line = line.replace('\t\t','\tNULL\t') # in case there are  missing fields in a row
@@ -305,12 +332,16 @@ for filename in filelist:
             agentlist = []
             for phrase in subfields:
 #                do_sub_count(sectorcounts, phrase)
+#        if "ilitary" in line: fscr.write(line)
                 agentlist.append(get_sector_code(phrase))
         outlist.append(reduce_sectors())
         
     #   do_count(events, evtfield)  # debug: checks distribution of events
         if DO_FOUO:
-            camcode = get_event_code(field[evtfield].strip())
+            if cameofield > 0:
+                camcode = field[cameofield]
+            else:
+                camcode = get_event_code(field[evtfield].strip())
         else:
             camcode = field[evtfield].strip()
         outlist.append(camcode)
@@ -337,13 +368,16 @@ for filename in filelist:
     #   print outlist
         #if '---' not in outlist:
         fout.write('\t'.join(outlist)+'\n')
+#        print("-->", outlist)
         caseno += 1
-#        if caseno > 160: sys.exit()   # debugging exit      
+#        if caseno > 16: break   # debugging     
+#        if caseno > 16: sys.exit()   # debugging exit      
         line = fin.readline()
 
     fin.close()
     fout.close()
 
+#fscr.close()
 
 """
 <17.04.28> This code hasn't been transitioned to Python 3.5
