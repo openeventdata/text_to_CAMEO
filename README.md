@@ -25,6 +25,11 @@ Requires:
     countrynames.txt
     agentnames.txt
 
+JSON conversion
+---------------
+
+Template code---this is from an active and fully debugged program, but it has some project-specific quirks---for converting ICEWS to JSON can be found at `https://github.com/philip-schrodt/ICEWS-to-jsonl`: using JSON rather than `.csv` is highly recommended if you are planning to do anything complicated. 
+
 Comments on the April-2017 modifications
 ----------------------------------------
 
