@@ -379,6 +379,8 @@ LABELi: 193= fight with small arms and light weapons
 LABEL: 194= Fight with artillery and tanks
 LABELi: 194= fight with artillery and tanks
 LABEL: 195= Employ aerial weapons
+LABEL: 1951= Employ precision-guided aerial munitions
+LABEL: 1952= Employ remotely piloted aerial munitions
 LABEL: 196= Violate ceasefire
 //
 //20= ATTACK WITH WEAPONS OF MASS DESTRUCTION
