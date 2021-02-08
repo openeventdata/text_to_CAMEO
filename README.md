@@ -5,7 +5,7 @@ This Python3 program takes data in the text-oriented ICEWS files and converts
 this to a more conventional data format using the CAMEO codes. The conversion process is described in detail 
 in the file *text_to_CAMEO_documentation.pdf*. 
 
-To run: python text_to_CAMEO.py [-F] [-c] [-t \<filename\>]
+To run: python text_to_CAMEO.py [-F] [-c] [-t \<filename\>] [-m]
 
 Options:
 --------
@@ -15,6 +15,8 @@ Options:
 -c: Include COW numerical country codes in addition to ISO-3166 code. Default: Include only the ISO codes
 
 -t: \<file-name \> Process the files listed one per line in the text file  \<file-name\>. Default: process all of the files in the working directory that end in “.csv” (Dataverse format) or “.tab” (FOUO format)
+
+-m: Output all of the substate agents in a concatenated string. Default: only a single agent is used, with the priority determined by the list agentcodes.
 
 Requires:
 ---------
@@ -45,3 +47,11 @@ ICEWS has been off-line for about nine
 months and will be produced by Leidos rather than Lockheed when/if it returns, so I'm waiting to see if there are
 additional changes under the new sponsorship; in the meantime this fix should work as long as you download the `.tsv` file
 and not the `.tab` file for those years.
+
+February-2021 modifications
+----------------------------------------
+
+* -m option for output of all substate actors
+* -F now detects the format change in FOUO version ca. May-2020. If the CAMEO code is already in the data, this is used.
+* 1951 and 1952 codes added to CAMEO_codefile.txt
+* os.path.basename()  used for finding filename, generalizing beyond Unix
